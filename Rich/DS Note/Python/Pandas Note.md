@@ -60,6 +60,11 @@ indices = [x, x, x]
 df.iloc[indices]
 ```
 
+###### 查看data type
+```Python
+df.dtypes()
+```
+
 ###### row, column設定
 ```Python
 #1是指column
@@ -109,9 +114,11 @@ df['col_name'].value_counts()
 df.col.idxmax()
 ```
 
-###### map函數可替換某一col的值
+###### 替換某一個值
 ```Python
+#map函數可一次替換多個, replace一次只能一個
 df.col.map({'x':'x'})
+df.replace('x', 'x')
 ```
 
 ###### 把series中的統計量合併成dataframe
@@ -122,4 +129,13 @@ df.add([x, x])
 ###### 算出全部的col有多少missing value會是一個series
 ```Python
 missing_val_count_by_column = (df.isnull().sum())
+```
+
+###### 選擇特定的數據類型
+```Python
+#includ選擇要的數據類型, exclude指定要排除的數據類型
+df.select_dtypes(include=x, exclude=x)
+```
+
+
 ```

@@ -27,9 +27,11 @@ model = RandomForestRegressor(n_estimators=x, random_state=0)
 ```
 
 衡量指標
+
 ```Python
 from sklearn.metrics import mean_absolute_error
 meam_absoulte_error(x, xx)
+
 ```
 
 使用統計值填補缺失值
@@ -39,4 +41,29 @@ my_imputer = SimpleImputer()
 imputed_X_train = pd.DataFrame(my_imputer.fit_transform(X_train))
 
 imputed_X_valid = pd.DataFrame(my_imputer.transform(X_valid))
+```
+
+###### 將數據按等地編號
+```Python
+from sklearn.preprocessing import OrdinalEncoder
+ordinal_encoder = OrdinalEncoder()
+
+label_X_train[object_cols] = ordinal_encoder.fit_transform(X_train[object_cols])
+label_X_valid[object_cols] = ordinal_encoder.transform(X_valid[object_cols])
+```
+
+###### 將非數值col欄位更改為vector
+```Python
+from sklearn.preprocessing import OneHotEncoder 
+encoder = OneHotEncoder() 
+encoder.fit(X) 
+X_encoded = encoder.transform(X)
+```
+
+###### 交差驗證
+```Python
+form sklearn.model_selection import cross_val_score
+
+#第一個參數填模型,cv切成幾等分
+scores = cross_val_score(x, test_X, test_y, cv = x)
 ```
