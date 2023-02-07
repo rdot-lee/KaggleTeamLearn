@@ -1,22 +1,51 @@
-## Regression
 
-Regression is a statistical method that attempts to determine the strength and character of the relationship between one dependent variable and a series of other variables. 
+## Simple Linear Regression
 
-##  Simple Linear Regression
-${teal} y=ax+b$
-parameter: intercept, slope
+### $y=ax+b$
+$a$ is slope
+$b$ is intercept 
 $x$ is called feature
 $y$ is called label
-$MSE(Mean\ Squared\ Error) =\frac{\sum(y_i-\hat{y})^2}{n}$
-$RMSE=\sqrt{MSE}$
-P value
+```Python
+from sklearn.linear_model import LinearRegression
+
+lm = LinearRegression()
+X = x
+y =x
+lm.fit(X, y)
+```
+
 ## Multivariable Regression
-$y=a_1x+a_2x+a_3x+...a_nx+b$
-$SSE(sum\ of\ square\ of\ error)=\sum(y_i-\hat{y})^2$
-$SST(total\ sum\ of\ squares)=\sum(y_i-\bar{y})^2$
-$R^2= 1-\frac{SSE}{SST}$
+### $y=a_1x_1+a_2x_2+a_3x_3+...a_nx_n+b$
+$a_1$ is coefficient of $x_1$
+$a_2$ is coefficient of $x_2$
+$b$ is intercept 
+
+
 
 ## Polynomial Regression
+
+### $y = a_1x_1^n+a_2x_1^{n-1}+a_3x_1^{n-2}+...a_nx_1+b$
+### $y = b+a_1x_1+a_2x_2+a_3x_1x_2+a_4x_1^2+a_5x_2^2+...$
+
+```Python
+from sklearn.preprocessing import PolynminalFeatures
+
+pr = PloynminalFeatures(degree = x)
+pr.fit_transform()
+
+```
+
+
+### Ridge Regression
+```Python
+form sklearn.linear_model imoprt Ridge
+#alpha值
+RidgeModel = Ridge(alpha = )
+RidgeModel.fit()
+
+```
+
 ## Logistic Regression
 
 

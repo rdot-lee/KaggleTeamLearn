@@ -7,8 +7,7 @@
 ## 啟動venv
 ## 步驟
 1. cd xx
-2. source cc_env/bin/actuvate
-
+2. source env_name/bin/activate
 
 # 其他指令
 可印出當前虛擬環境有什麼package
