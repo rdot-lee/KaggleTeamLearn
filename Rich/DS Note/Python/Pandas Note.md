@@ -64,7 +64,6 @@ df.iloc[indices]
 ```Python
 df.dtypes()
 ```
-
 ###### row, column設定
 ```Python
 #1是指column
@@ -119,6 +118,7 @@ df.col.idxmax()
 #map函數可一次替換多個, replace一次只能一個
 df.col.map({'x':'x'})
 df.replace('x', 'x')
+
 ```
 
 ###### 把series中的統計量合併成dataframe
@@ -139,3 +139,4 @@ df.select_dtypes(include=x, exclude=x)
 
 
 ```
+

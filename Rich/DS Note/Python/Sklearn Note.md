@@ -32,6 +32,7 @@ model = RandomForestRegressor(n_estimators=x, random_state=0)
 from sklearn.metrics import mean_absolute_error
 meam_absoulte_error(x, xx)
 
+
 ```
 
 使用統計值填補缺失值
@@ -66,4 +67,5 @@ form sklearn.model_selection import cross_val_score
 
 #第一個參數填模型,cv切成幾等分
 scores = cross_val_score(x, test_X, test_y, cv = x)
+
 ```

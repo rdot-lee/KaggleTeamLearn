@@ -28,6 +28,7 @@ Seaborm
 ```Python
 #畫出regression line
 sns.regplot(x = 'x', y= 'x', data = df)
+
 #箱型圖
 xx.boxplot(column='x')
 sns.boxplot(x='', y='', data=x)
@@ -65,3 +66,4 @@ import matplotlib.pyplot as plt
 sns.distplot(df[''], hist = False)
 plt.show()
 ```
+

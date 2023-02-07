@@ -21,4 +21,5 @@ np.dot(x, y)
 ```Python
 #txt如果有標題會報錯, 需要跳過title, 如果是cvs檔需加delimiter
 np.loadtxt('x', skiprows=1, delimiter = ',')
+
 ```
