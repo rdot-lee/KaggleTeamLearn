@@ -9,7 +9,7 @@ DROP DATABASE x;
 ## 新增
 ###### 新增table
 ```SQL
-CREATE TABLE teble_name(
+CREATE TABLE table_name(
 	col1 type,
 	col2 type
 );
@@ -17,7 +17,7 @@ CREATE TABLE teble_name(
 
 ##### 新增現有table的col
 ```SQL
-ALTER TABLE x ADD COLUMN col1 type;
+ALTER TABLE table_name ADD COLUMN col1 type;
 ```
 
 ###### 不能為空限制敘述
@@ -75,6 +75,12 @@ ALTER TABLE table_name(
 );
 ```
 
+###### 修改已存在table的type
+```SQL
+ALTER TABLE table_name ALTER COLUMN 
+column_name new_data_type;
+```
+
 ###### 修改table中某一col為不重複
 ```SQL
 ALTER TABLE xx ADD UNIQUE xx;
@@ -103,6 +109,11 @@ ON table_name (col1, _col2, ...);
 ###### 刪除資料表
 ```SQL
 DROP table xx;
+```
+
+###### 刪除table中的所有數據
+```SQL
+TRUNCATE TABLE table_name;
 ```
 
 ###### 刪除現有tabe的col

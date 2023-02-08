@@ -1,5 +1,3 @@
-
-
 ## 新增
 
 ```SQL
@@ -45,9 +43,12 @@ SELECT COUNT(DISTINCT column) FROM table_name;
 SELECT col FROM table_name WHERE condition;
 ```
 
-###### 排序語法 結尾加上DEDC可以降冪排列
+###### 排序語法 
 ```SQL
+#升冪
 SELECT * FROM table_name  ORDER BY x;
+#降冪
+SELECT * FROM table_name  ORDER BY x DESC;
 ```
 
 ###### 取兩 cloumns排序
@@ -73,9 +74,17 @@ SELECT col FROM table_name WHERE condi LIMIT number ;
 SELECT FROM table_name WHERE condi;
 ```
 
-###### 查詢資料裡面是否有某一個字元開頭/結尾%放後面
+###### 查詢資料裡面是否有某一個字元開頭or某一字結尾
 ```SQL
+#x開頭
 SELECT * FROM table_name WHERE xx LIKE 'x%';
+#x結尾
+SELECT * FROM table_name WHERE xx LIKE '%x';
+```
+
+###### 查詢某一column中相同的值有多少個
+```SQL
+SELECT col_name FROM tabale_name GROUP BY col_name
 ```
 
 ###### 查詢某資料是否有這些字
