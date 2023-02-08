@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ML/Deep Learning.md",
+                "file": "SQL/DDL.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ML/Deep Learning.md",
+                "file": "SQL/DDL.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ML/Deep Learning.md",
+                "file": "SQL/DDL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ML/Deep Learning.md"
+                "file": "SQL/DDL.md"
               }
             }
           },
@@ -156,17 +156,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "355399c668fb64d9",
+  "active": "49794e98ffba4b54",
   "lastOpenFiles": [
-    "ML/Machine Learning Model.md",
+    "SQL/DML.md",
+    "SQL/DDL.md",
+    "SQL/LeetCode.md",
+    "Git/Git Note.md",
+    "Python/Pandas Note.md",
     "Python/Sklearn Note.md",
+    "ML/Machine Learning Model.md",
     "ML/Deep Learning.md",
     "Math/Math Note.md",
-    "Python/Pandas Note.md",
-    "Python/Leetcode.md",
-    "Python/Venv Note.md",
-    "Python/Data Visualization Note.md",
-    "R/R Note.md",
-    "SQL/LeetCode.md"
+    "Python/Leetcode.md"
   ]
 }
