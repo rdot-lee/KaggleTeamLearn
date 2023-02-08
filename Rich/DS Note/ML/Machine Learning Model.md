@@ -1,4 +1,5 @@
 
+
 ## Simple Linear Regression
 
 ### $y=ax+b$
@@ -45,6 +46,7 @@ RidgeModel = Ridge(alpha = )
 RidgeModel.fit()
 
 ```
+
 
 ## Logistic Regression
 
