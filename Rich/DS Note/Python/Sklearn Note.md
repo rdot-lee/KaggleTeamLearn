@@ -31,6 +31,7 @@ model = RandomForestRegressor(n_estimators=x, random_state=0)
 from sklearn.metrics import mean_absolute_error
 meam_absoulte_error(x, xx)
 
+
 ```
 
 使用統計值填補缺失值
