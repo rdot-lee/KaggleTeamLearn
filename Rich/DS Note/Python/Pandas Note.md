@@ -60,10 +60,12 @@ indices = [x, x, x]
 df.iloc[indices]
 ```
 
+
 ###### 查看data type
 ```Python
 df.dtypes()
 ```
+
 ###### row, column設定
 ```Python
 #1是指column
