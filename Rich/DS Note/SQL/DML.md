@@ -71,7 +71,31 @@ SELECT col FROM table_name WHERE condi LIMIT number ;
 
 ###### 取極值平均...min, max, avg, count, sum 寫法都一樣
 ```SQL
-SELECT FROM table_name WHERE condi;
+SELECT sum(col_name) FROM table_name;
+```
+
+###### 四捨五入到指定位數
+```SQL
+SELECT ROUND(col, x) FROM table_name
+```
+
+###### 返回字串的長度
+```SQL
+SELECT LENGTH(col) FROM table_name
+```
+
+###### 取出的資料換成大小寫
+```SQL
+#大寫
+SELECT UPCASE(col) FROM table_name
+#小寫
+SELECT LCASE(col) FROM table_name
+```
+
+
+###### 資料取出後改title
+```SQL 
+SELECT example as ex FROM x; 
 ```
 
 ###### 查詢資料裡面是否有某一個字元開頭or某一字結尾
@@ -125,4 +149,11 @@ SELECT col2 FROM table2;
 SELECT col1 FROM table1
 UNION ALL 
 SELECT col2 FROM table2;
+```
+
+###### 子查詢
+```SQL
+#子查詢要加()
+SELECT col1, col2 FROM table_name 
+WHERE col (SELECT col FROM table_name WHERE condi);
 ```
