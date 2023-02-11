@@ -92,6 +92,7 @@ SELECT UPCASE(col) FROM table_name
 SELECT LCASE(col) FROM table_name
 ```
 
+
 ###### 資料取出後改title
 ```SQL 
 SELECT example as ex FROM x; 
