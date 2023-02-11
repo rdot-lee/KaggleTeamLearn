@@ -132,11 +132,14 @@ SELECT col1 as x, clo2 as xx FROM table_name;
 
 ###### join資料表:inner, left, right, full
 ```SQL
-SELECT * FROM table1 INNER JOIN table2 
+#inner join是取交集(不會有空值)
+#left join左邊為主右邊沒值時會用NULL填
+#outer join取聯集
+SELECT * FROM table1 () JOIN table2 
 ON table1.x = table2.x;
 ```
 
-###### 資料表合併在某一col1裡有一樣的val會合併
+###### 資料表合併在某一col裡有一樣的val會合併
 ```SQL
 SELECT col1 FROM table1 
 UNION 

@@ -6,17 +6,16 @@ $a$ is slope
 $b$ is intercept 
 $x$ is called feature
 $y$ is called label
+
 ```Python
 from sklearn.linear_model import LinearRegression
 
 lm = LinearRegression()
-X = x
-y =x
-lm.fit(X, y)
 ```
 
 ## Multivariable Regression
-### $y=a_1x_1+a_2x_2+a_3x_3+...a_nx_n+b$
+
+### $y=a_1x_1+a_2x_2+a_3x_3+...a_nx_n+b=θ^TX$
 $a_1$ is coefficient of $x_1$
 $a_2$ is coefficient of $x_2$
 $b$ is intercept 
@@ -33,11 +32,12 @@ from sklearn.preprocessing import PolynminalFeatures
 
 pr = PloynminalFeatures(degree = x)
 pr.fit_transform()
-
 ```
 
 
+
 ### Ridge Regression
+
 ```Python
 form sklearn.linear_model imoprt Ridge
 #alpha值
@@ -48,22 +48,22 @@ RidgeModel.fit()
 
 ## Logistic Regression
 
+## K-Nearest Neighbours
 
-## Classification
+## Decision Tree
+```Python
+from sklearn.tree import DecisionTreeRegressor
+from sklearn import tree
 
-$Confusion\ Martix$
-|                 | Actual True         | Actual False        |     
-| --------------- | ------------------- | ------------------- |
-| Predicted Ture  | True Positive (TP)  | False Positive (FP) |    
-| Predicted False | True Negative (TN)  ) | False Negative (FN)|   
+model = DecisionTreeRegressor(random_state=1)
+```
 
-$Accuracy = \frac{TP+TN}{ALL}$
-$Percision= \frac{TP}{TP+FP}$
-$Recall = \frac{TP}{TP+FN}$
-$F1 Score = \frac{2*Accuary*Percisoin}{Accuary+Percisoin}$
-$AUC$
+###### 隨機叢林
+```Python
+from sklearn.ensemble import RandomForestRegressor
+model = RandomForestRegressor(n_estimators=x, random_state=0)
+```
 
- 
 ## Clustering
 
 K-maens

@@ -1,4 +1,4 @@
-# 建立venv
+s# 建立venv
 ## 步驟
 1. mkdir xx
 2. cd xx
