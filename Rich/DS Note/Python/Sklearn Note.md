@@ -30,7 +30,7 @@ label_X_train[object_cols] = ordinal_encoder.fit_transform(X_train[object_cols])
 label_X_valid[object_cols] = ordinal_encoder.transform(X_valid[object_cols])
 ```
 
-###### 將非數值col欄位更改為vector
+###### One-Hot(將非數值col欄位更改為vector)
 ```Python
 from sklearn.preprocessing import OneHotEncoder 
 encoder = OneHotEncoder() 
@@ -46,7 +46,7 @@ form sklearn.model_selection import cross_val_score
 scores = cross_val_score(x, test_X, test_y, cv = x)
 ```
 
-Grid Serach
+###### Grid Serach
 ```Python
 form sklear.model_select import GridSearchCV, cross_val_score
 ```
