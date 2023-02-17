@@ -15,10 +15,10 @@ train_X, val_X, train_y, val_y = train_test_split(X, y, train_size=0.8, test_siz
 ###### 使用統計值填補缺失值
 ```Python
 from sklearn.impute import SimpleImputer
-my_imputer = SimpleImputer()
-imputed_X_train = pd.DataFrame(my_imputer.fit_transform(X_train))
-
-imputed_X_valid = pd.DataFrame(my_imputer.transform(X_valid))
+#strategy參數可填mean, constant, median, most_frequent
+#strategy = 'constant'將和fill_value搭配使用
+my_imputer = SimpleImputer(strategy=)
+imputed_X_train = my_imputer.fit_transform(x)
 ```
 
 ###### 將數據按等地編號
