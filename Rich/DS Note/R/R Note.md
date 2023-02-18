@@ -1,14 +1,14 @@
-### 下載套件
+###### 下載套件
 ```R
 install.packages("xx")
 ```
 
-引入套件
+###### 引入套件
 ```R
 libarary("xx")
 ```
 
-查看數據集
+###### 查看數據集
 ```R
 #查看所有數據
 View(x)
@@ -16,7 +16,7 @@ View(x)
 head(x, n)
 ```
 
-使用ggplot繪圖
+###### 使用ggplot繪圖
 ```R
 libarary(ggplot2)
 ggplot(data=xx,

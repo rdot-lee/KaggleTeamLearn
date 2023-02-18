@@ -25,7 +25,7 @@ df['new_column'] = df['xx'] + 1
 df.drop(columns = ['xx'])
 ```
 
-##### 把NaN一整個row刪掉
+###### 把NaN一整個row刪掉
 ```Python
 df.dropna()
 ```
@@ -139,6 +139,4 @@ missing_val_count_by_column = (df.isnull().sum())
 df.select_dtypes(include=x, exclude=x)
 ```
 
-
-```
 
