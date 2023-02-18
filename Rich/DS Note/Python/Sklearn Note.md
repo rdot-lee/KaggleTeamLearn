@@ -42,8 +42,8 @@ X_encoded = encoder.transform(X)
 ```Python
 form sklearn.model_selection import cross_val_score
 
-#第一個參數填模型,cv切成幾等分
-scores = cross_val_score(x, test_X, test_y, cv = x)
+#第一個參數填使用模型,cv切成幾等分,scoring參數填寫評估模型的指標
+scores = cross_val_score(estimator  , test_X, test_y, cv = x, scoring = '')
 ```
 
 ###### Grid Serach
