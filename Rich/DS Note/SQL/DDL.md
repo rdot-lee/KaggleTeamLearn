@@ -15,7 +15,7 @@ CREATE TABLE table_name(
 );
 ```
 
-##### 新增現有table的col
+###### 新增現有table的col
 ```SQL
 ALTER TABLE table_name ADD COLUMN col1 type;
 ```

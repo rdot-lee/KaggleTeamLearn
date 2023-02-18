@@ -1,4 +1,4 @@
-### Statistics
+## Statistics
 
 P-value < 0.001 Strong
 P-value < 0.05 Moderate
@@ -11,13 +11,14 @@ from scipy.stats import pearsonr
 corr, p_value = pearsonr(df['x'], df['x'])
 ```
 
-### Chi-square Test
+## Chi-square Test
 
- $\sum_{i=1}^n\frac{(O_i-E_i)^2}{E_i}$~$\chi^2$
+### $\sum_{i=1}^n\frac{(O_i-E_i)^2}{E_i}$~$\chi^2$
+
 $O_i$ is observe value
 $E_i$ is except value
 $df = n-1$ is degree of freedom
-查表看自由度$aplha$值通常是0.05 如果$\chi^2$ > 查出來的值拒絕$H_0$
+查表看自由度$\alpha$值通常是0.05 如果$\chi^2$ > 查出來的值那就拒絕$H_0$
 
 ```Python
 from sci.py
@@ -25,9 +26,9 @@ scipy.stats.chi2()
 ```
 
 
-### Loss Funtion
+## Regresson Metrices
 
-##### MSE/SSD
+### MSE/SSD
 $MSE(Mean\ Squared\ Error) =\frac{\sum(y_i-\hat{y})^2}{n}$
 $RMSE=\sqrt{MSE}$
 
@@ -38,9 +39,9 @@ perdict = model.predict(X)
 mean_squared_error(Y, perdict)
 ```
 
-###### MAE/SAD
+### MAE/SAD
 
-$cost = \sum \mid estimate-actual\mid$
+$MAE = \frac{1}{n}\sum \mid y_i-\hat{y}\mid$
 ```Python
 from sklearn import mean_absloute_error
 
@@ -48,6 +49,7 @@ perdict = model.predict(X)
 mean_absloute_error(Y, perdict)
 ```
 
+### Determinet Coefficient
 $R^2= 1-\sum\frac{(y_i-\hat{y})^2}{(y_i-\bar{y})^2}$
 ```Python
 from sklear.linear_model import LinearRegression
@@ -55,3 +57,22 @@ from sklear.linear_model import LinearRegression
 lm = LinearRegression()
 R_2 = lm.score(X, y)
 ```
+
+## Classification Metrices
+
+Confusion\ Martix
+|                 | Actual True         | Actual False        |     
+| --------------- | ------------------- | ------------------- |
+| Predicted Ture  | True Positive (TP)  | False Positive (FP) |    
+| Predicted False | True Negative (TN) | False Negative (FN)|   
+
+$Accuracy = \frac{TP+TN}{ALL}$
+$Percision= \frac{TP}{TP+FP}$
+$Recall = \frac{TP}{TP+FN}$
+$F1\ Score = \frac{2*Accuary*Percisoin}{Accuary+Percisoin}$
+$AUC$
+
+
+Jaccard index
+$J(y, \hat y) = \frac{abs(y union \hat y)}{abs(y \hat y)}$
+Log Loss
