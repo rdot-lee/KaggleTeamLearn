@@ -1,6 +1,6 @@
 ###### 設定圖的大小
 ```Python
-fig = plt.figure(figsize=(8, 6))
+fig = plt.figure(figsize=(width, height))
 ```
 
 ###### 設定圖的x, y, title
@@ -10,7 +10,12 @@ plt.xlabel('xx', fontsize = 14)
 plt.ylabel('xx')
 plt.title('xx')
 ```
-
+###### 繪製折線圖
+```Python
+sns.lineplot(data=xx)
+#可以設置小圖標
+sns.lineplot(data=xx, label='')
+```
 ###### plot類型
 ```Python
 #kind參數有以下
